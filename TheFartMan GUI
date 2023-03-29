@@ -34,6 +34,8 @@ local KTab = Window:NewTab("Keybind Menu");
 local KSection = KTab:NewSection("Keybind Menu");
 local MTab = Window:NewTab("Misc Menu");
 local MSection = MTab:NewSection("Misc Menu");
+local GTab = Window:NewTab("Scripts")
+local GSection = GTab:NewSection("Scripts")
 _G.CToggle = false;
 _G.metalskin = false;
 _G.LOCALPLAYER = game.Players.LocalPlayer.Name;
@@ -1314,9 +1316,6 @@ MSection:NewButton("AntiLag", "Lowers Graphics Quality", function()
 		end)();
 	end);
 end);
-MSection:NewButton("Inf Yield Script", "", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/iM1H9z1R"))();
-end);
 MSection:NewButton("Ground Crack Lag", "Lags game with Flight", function(state)
 	for i = 1, 1000 do
 		game:GetService("ReplicatedStorage").Events.GroundCrack:FireServer();
@@ -1827,6 +1826,15 @@ KSection:NewKeybind("Space", "", Enum.KeyCode.X, function() local varX = player.
 KSection:NewKeybind("Toggle UI", "", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI();
 end);
+GSection:NewButton("Fake IP Grabber Script", "", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Killo1231/Fake-op/main/Fake%20op"))();
+end);
+GSection:NewButton("Inf Yield Script", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iM1H9z1R"))();
+end);
+
+end);
+
 local MainSection = Tab:NewSection("Made By Killo & Sage");
 local TargetSection = TargetTab:NewSection("Killo & Sage");
 local SSection = STab:NewSection("Made By Killo & Sage");
@@ -1834,3 +1842,4 @@ local StatSection = StatTab:NewSection("Killo & Sage");
 local TSection = TTab:NewSection("Made By Killo & Sage");
 local MSection = MTab:NewSection("Made By Killo & Sage");
 local KSection = KTab:NewSection("Made By Killo & Sage");
+local GSection = GTab:NewSection("Made By Killo & Sage");
