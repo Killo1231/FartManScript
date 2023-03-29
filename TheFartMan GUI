@@ -1314,6 +1314,9 @@ MSection:NewButton("AntiLag", "Lowers Graphics Quality", function()
 		end)();
 	end);
 end);
+MSection:NewButton("Inf Yield Script", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iM1H9z1R"))();
+end);
 MSection:NewButton("Ground Crack Lag", "Lags game with Flight", function(state)
 	for i = 1, 1000 do
 		game:GetService("ReplicatedStorage").Events.GroundCrack:FireServer();
