@@ -1832,9 +1832,6 @@ end);
 GSection:NewButton("Inf Yield Script", "", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/iM1H9z1R"))();
 end);
-
-end);
-
 local MainSection = Tab:NewSection("Made By Killo & Sage");
 local TargetSection = TargetTab:NewSection("Killo & Sage");
 local SSection = STab:NewSection("Made By Killo & Sage");
